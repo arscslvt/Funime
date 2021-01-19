@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Yusei+Magic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(20, 21, 32);
+    animation: opening 0.2s ease;
+}
+
+@keyframes opening{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.slider{
+    z-index: 1;
+    background-color: rgb(38, 40, 61);
+    width: 50%;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.slider p:nth-child(1){
+    font: bold 30px 'Raleway';
+    color: #fff;
+}
+.slider div{
+    position: relative;
+    font: 12px 'Raleway';
+    color: #ffffff88;
+    height: 72vh;
+    overflow-y: auto;
+}
+
+.close{
+    z-index: 2;
+    cursor: pointer;
+    background: url("assets/closeBt.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .slider{
+        width: 80%;
+    }
+
+    .slider div{
+        height: 68vh;
+    }
+
+    .close{
+        width: 40px;
+        height: 40px;
+    }
+}

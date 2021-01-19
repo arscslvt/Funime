@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Yusei+Magic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(20, 21, 32);
+}
+
+.head{
+    color: #fff;
+    padding: 14px 15px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.logo{
+    align-items: baseline;
+    display: flex;
+    gap: 15px;
+}
+
+.headTitle{
+    font: bold 26px 'Raleway';
+    cursor: default;
+}
+
+.headSnippet{
+    font: 14px 'Raleway';
+    cursor: default;
+}
+
+.nav{
+    align-items: center;
+    margin-left: auto;
+    font: 16px 'Raleway';
+    display: flex;
+    gap: 18px;
+}
+
+.nav p{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.nav p:hover{
+    opacity: 1;
+}
+
+.typeBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+}
+
+.typeBox p:nth-child(1){
+    font: bold 28px 'Raleway';
+    color: #fff;
+    text-align: center;
+    user-select: none;
+}
+.typeBox .learnConditions{
+    font: 10px 'Raleway';
+    color: #ffffff85;
+    text-align: center;
+    user-select: none;
+}
+
+.conditions{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.1s ease;
+}
+.conditions:hover{
+    opacity: 0.8;
+}
+
+.typeBox input{
+    border: 2px solid rgb(38, 40, 61);
+    outline: none;
+    background-color: rgb(38, 40, 61);
+    padding: 10px;
+    font: bold 18px 'Raleway';
+    border-radius: 6px;
+    color: #ffd3da;
+    text-align: center;
+}
+.typeBox input:focus{
+    border: 2px solid #fff;
+    text-transform: uppercase;
+}
+.typeBox input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ffd3da88;
+}
+
+.alert{
+    padding: 15px;
+    background-color: rgb(38, 40, 61);
+    width: 250px;
+    border-radius: 6px;
+    display: none;
+    grid-template-rows: auto auto;
+    gap: 7px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    user-select: none;
+}
+
+.alert p:nth-child(1){
+    font: bold 20px 'Raleway';
+    color: #fff;
+}
+.alert p:nth-child(2){
+    font: 14px 'Raleway';
+    color: #ffffff96;
+}
+
+@media only screen and (max-width: 600px) {
+    .alert{
+        padding: 10px;
+        background-color: rgb(38, 40, 61);
+        width: 70vw;
+        border-radius: 6px;
+        display: none;
+        grid-template-rows: auto auto;
+        gap: 7px;
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        user-select: none;
+    }
+    
+    .headSnippet{
+        display: none;
+    }
+
+    .typeBox{
+        width: 75vw;
+    }
+
+    .headTitle{
+        font: bold 22px 'Raleway';
+        cursor: default;
+    }
+
+    .headSnippet{
+        font: 12px 'Raleway';
+        cursor: default;
+    }
+}
