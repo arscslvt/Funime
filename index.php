@@ -1,1 +1,1 @@
-<?php header( 'Location: /funime/index.html' ) ;  ?>
+<?php header( 'Location: /Funime/index.html' ) ;  ?>
