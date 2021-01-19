@@ -1,4 +1,4 @@
-# Funime
+# Funime ![alt text](https://i.ibb.co/kSHrw8h/Webp-net-resizeimage.png) 
 Share your screen (PC o MacOS) with others by a link without sign-in.
 
 ```sh
