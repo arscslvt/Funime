@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/conditions.css">
     <link rel="shortcut icon" href="styles/assets/favicon.png" type="image/x-icon">
     <title>About Funime | Funime</title>
 </head>
 <body>
-    
+    <div class="close" id="closeBt"></div>
+    <div class="slider">
+        <p>What's Funime?</p>
+        <div>Share your screen (PC o MacOS) with others by a link without sign-in.<br><br>Funime allows any non-registered user to share their screen with other users via a link or a 6-digit code. It can be used at any time as it does not require registration by the creator of the room or by the visitor.<br><br> Support the project by putting a star on the <a href="https://github.com/arscslvt/Funime">repository</a> or help me complete the project if you have web development skills.<br><br>Funime is currently optimized for browsing on Chrome (PC, Mobile), Opera and Firefox.</div>
+    </div>
+
+    <script>
+        document.getElementById("closeBt").addEventListener("click", function(){
+            document.location.replace("index.html");
+        })
+    </script>
 </body>
 </html>

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(20, 21, 32);
+}
+
+.video{
+    max-width: 800px;
+    border-radius: 6px;
+    background-color: rgb(38, 40, 61);
+}
+
+.stream{
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 600px 100px;
+    place-content: center;
+    /* border: 1px solid red; */
+}
+
+.player{
+    display: grid;
+    /* border: 1px solid red; */
+    place-content: center;
+}
+
+.controls{
+    display: grid;
+    place-content: content;
+    grid-template-columns: auto;
+    /* gap: 20px; */
+}
+
+.startCapture{
+    grid-column-start: 2;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    padding: 10px;
+    border: 2px solid rgb(38, 40, 61);
+    outline: none;
+    background-image: url("assets/share.svg");
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(38, 40, 61);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.startCapture:hover{
+    border: 2px solid #fff;
+}
+
+.endCapture{
+    grid-column-start: 2;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    padding: 10px;
+    border: 2px solid rgb(223, 47, 47);
+    outline: none;
+    background-image: url("assets/stop.svg");
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(223, 47, 47);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.endCapture:hover{
+    border: 2px solid #fff;
+}
+
+@media only screen and (max-width: 850px) {
+    .video{
+        max-width: 600px;
+        border-radius: 6px;
+        background-color: rgb(38, 40, 61);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .video{
+        max-width: 360px;
+        border-radius: 6px;
+        background-color: rgb(38, 40, 61);
+    }
+}
