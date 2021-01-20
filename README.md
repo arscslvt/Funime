@@ -3,8 +3,8 @@
 Share your screen (PC o MacOS) with others by a link without sign-in.
 
 ```sh
-  I NEED YOUR HELP TO COMPLETE MY PROJECT. WE CAN DO THIS TOGHETER ❤️
-  ```
+I NEED YOUR HELP TO COMPLETE MY PROJECT. WE CAN DO THIS TOGHETER ❤️
+```
 
 ## What about
 Funime allows any non-registered user to share their screen with other users via a link or a 6-digit code. It can be used at any time as it does not require registration by the creator of the room or by the visitor.
