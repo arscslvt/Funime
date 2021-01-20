@@ -4,6 +4,7 @@ Share your screen (PC o MacOS) with others by a link without sign-in.
 
 ```sh
 I NEED YOUR HELP TO COMPLETE MY PROJECT. WE CAN DO THIS TOGHETER ❤️
+✉ CONTACT ME FOR MORE INFO: funime.info@libero.it
 ```
 
 ## What about
