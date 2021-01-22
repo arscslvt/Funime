@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/room.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="styles/assets/favicon.png" type="image/x-icon">
     <title>Admin's room | Funime</title>
 </head>
 <body>
     <div class="stream">
         <div class="player">
-            <video src="" id="video" class="video" autoplay></video>
+            <p id="video_snippet">Start a stream and invite some friends</p>
+            <video src="" id="video" class="capture" autoplay></video>
         </div>
         <div class="controls">
-            <button id="startCapture" class="startCapture"></button>
-            <button id="endCapture" class="endCapture"></button>
+            <div class="left"></div>
+            <div class="middle">
+                <div class="buttons">
+                    <button id="startCapture" class="startCapture">Start sharing</button>
+                    <button id="endCapture" class="endCapture">End call</button>
+                </div>
+                <div class="link">
+                    <input type="text" name="invite" id="invite" class="url" value="funimate#link" readonly>
+                </div>
+            </div>
+            <div class="right"></div>
         </div>
     </div>
-    
 
+    <div class="error" id="error">
+        <p id="errorName">[ERROR CODE NAME]</p>
+        <p id="errorBody">[ERROR CODE BODY]</p>
+    </div>
 
-    <script src="room.js"></script>
+    <script src="scripts/room.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
