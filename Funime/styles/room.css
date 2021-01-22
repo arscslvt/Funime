@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Yusei+Magic&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,10 +9,43 @@ body{
     background-color: rgb(20, 21, 32);
 }
 
-.video{
-    max-width: 800px;
+.player p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 360px;
+    font: bold 18px 'Raleway';
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+
+    user-select: none;
+
+    animation: showFade 0.8s ease;
+}
+
+@keyframes showFade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.capture{
+    display: none;
+    border: 10px rgba(38, 40, 61, 1) solid;
+    max-width: 780px;
     border-radius: 6px;
     background-color: rgb(38, 40, 61);
+
+    animation: showFade 1s ease;
+}
+.capture:hover{
+    cursor: no-drop;
 }
 
 .stream{
@@ -23,31 +58,76 @@ body{
 }
 
 .player{
+    position: relative;
     display: grid;
     /* border: 1px solid red; */
     place-content: center;
 }
 
 .controls{
+    width: 100vw;
     display: grid;
-    place-content: content;
-    grid-template-columns: auto;
+    place-content: center;
+    grid-template-columns: auto auto auto;
     /* gap: 20px; */
 }
 
-.startCapture{
-    grid-column-start: 2;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    padding: 10px;
+.left{
+    /* border: 1px solid purple; */
+}
+
+.middle{
+    display: grid;
+    /* grid-template-rows: 50px 10px; */
+    /* border: 1px solid red; */
+    place-content: center;
+    gap: 20px;
+}
+
+.buttons{
+    /* border: 1px solid yellow; */
+    display: flex;
+    place-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.url{
     border: 2px solid rgb(38, 40, 61);
     outline: none;
+    background-color: rgb(38, 40, 61);
+    width: 300px;
+    font: bold 15px 'Raleway';
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-align: center;
+    opacity: 0.5;
+}
+.url:focus{
+    opacity: 1;
+}
+
+.right{
+    /* border: 1px solid blue; */
+}
+
+.startCapture{
+    border-radius: 6px;
+    padding: 6px 10px 6px 40px;
+    border: 2px solid rgb(38, 40, 61);
+    outline: none;
+
+    font: bold 15px 'Raleway';
+    color: #fff;
+    text-align: right;
+
     background-image: url("assets/share.svg");
-    background-size: 40px;
-    background-position: center;
+    background-size: 25px;
+    background-position: 5px;
     background-repeat: no-repeat;
     background-color: rgb(38, 40, 61);
+
     cursor: pointer;
     transition: 0.1s ease;
 }
@@ -56,18 +136,21 @@ body{
 }
 
 .endCapture{
-    grid-column-start: 2;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    padding: 10px;
-    border: 2px solid rgb(223, 47, 47);
+    border-radius: 6px;
+    padding: 6px 10px 6px 40px;
+    border: 2px solid rgb(61, 40, 38);
     outline: none;
+
+    font: bold 15px 'Raleway';
+    color: #fff;
+    text-align: right;
+
     background-image: url("assets/stop.svg");
-    background-size: 40px;
-    background-position: center;
+    background-size: 25px;
+    background-position: 5px;
     background-repeat: no-repeat;
-    background-color: rgb(223, 47, 47);
+    background-color: rgb(235, 68, 50);
+
     cursor: pointer;
     transition: 0.1s ease;
 }
@@ -76,17 +159,19 @@ body{
 }
 
 @media only screen and (max-width: 850px) {
-    .video{
-        max-width: 600px;
+    .capture{
+        max-width: 500px;
         border-radius: 6px;
         background-color: rgb(38, 40, 61);
+        border: 4px rgba(38, 40, 61, 1) solid;
     }
 }
 
 @media only screen and (max-width: 650px) {
-    .video{
-        max-width: 360px;
+    .capture{
+        max-width: 350px;
         border-radius: 6px;
         background-color: rgb(38, 40, 61);
+        border: 4px rgba(38, 40, 61, 1) solid;
     }
 }

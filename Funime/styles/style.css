@@ -59,6 +59,7 @@ body{
     font: bold 14px 'Raleway';
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.1s ease;
 }
 .createCode:hover{
     border: 2px solid #fff;
